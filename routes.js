@@ -9,9 +9,4 @@ router.get('/api/v1/products', getProducts)
     .put('/api/v1/products/:id', updateProduct)
     .delete('/api/v1/products/:id', deleteProduct)
 
-    .get("/book/:id", (context) => {
-        console.log(context.params, context.params.id)
-    });
-
-
 export default router;
